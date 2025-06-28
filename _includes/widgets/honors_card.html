@@ -1,0 +1,17 @@
+<div class="row mt-3">
+  <div class="col">
+    <div class="card border-0 shadow-sm bg-white">
+      <div class="card-body p-4">
+        <h5 class="mb-3">Honors</h5>
+        <ul class="list-unstyled mb-0 pl-2">
+          {% for item in site.data.profile.awards %}
+          <li class="d-flex justify-content-between mb-2">
+            <div>{{ item.name }}</div>
+            <div class="text-muted"><em>{{ item.date }}</em></div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
