@@ -3,13 +3,14 @@ secondary_name: ""
 navbar_name: "Haozhou Yang"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/ucsb-logo.png  # Logo is optional
+  name: Prospective Economics PhD student, UCSB
+- logo: /assets/images/badges/NYU-logo.png  # Logo is optional
+  name: Research Assistant, NYU Stern
 
 
 email: "haozhouyang@ucsb.edu"
-# cv_link: link-to-your-cv-file
+cv_link: https://www.google.com/
 # gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
 github: haozhou-yang
 twitter: louis_yhz  # Do not include the '@' symbol
@@ -22,58 +23,56 @@ linkedin: haozhou-louis-yang
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Welcome!
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    There is a short bio of me.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/bio_photo.png
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  Photo by my friend Haiming
 
 education:
 - name: University of California, Santa Barbara
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/ucsb-logo.png
   position: >- 
     Prospective Ph.D Student in Economics <br/>
-  date: Sep. 2024 - present
+  date: Apr. 2025 - present
 - name: New York University (Stern & GSAS)
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/NYU-logo.png
   position: >-
     M.S. in Quantitative Economics <br/>
   date: Jun. 2024 - Jun. 2025
 - name: London School of Economics
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/LSE-logo.png
   position: >- 
     M.S. in Management and Strategy <br/>
   date: Sep. 2023 - Jun. 2024
 - name: Shanghai International Studies University
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/sisu-logo.png
   position: >- 
     B.Econ. in International Economics and Trade <br/>
   date: Sep. 2019 - Jun. 2023
 
 experience:
 - name: NYU Stern
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/NYU-logo.png
   position: Research Assistant
   date: Sep. 2024 - Jun. 2025
 - name: Northeast Securities
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/NE-logo.png
   position: Research Intern
   date: Mar. 2023 - Jun. 2022
 - name: KPMG
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/kpmg-logo.png
   position: Intern
   date: Dec. 2021 - Feb. 2022
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+# awards:
+# - name: Award Name 2
+#   date: 2024
+# - name: Award Name 1 
+#   date: 2021
+# - name: A quick brown fox jumps over the lazy dog and runs away award
+#   date: 2021
