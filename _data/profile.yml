@@ -5,7 +5,7 @@ navbar_name: "Haozhou Yang"
 positions:
 - logo: /assets/images/badges/ucsb-logo.png  # Logo is optional
   name: Prospective Economics PhD student, UCSB
-- logo: /assets/images/badges/NYU-logo.png  # Logo is optional
+- logo: /assets/images/badges/NYU-logo.jpg  # Logo is optional
   name: Research Assistant, NYU Stern
 
 
@@ -40,7 +40,7 @@ education:
     Prospective Ph.D Student in Economics <br/>
   date: Apr. 2025 - present
 - name: New York University (Stern & GSAS)
-  logo: /assets/images/badges/NYU-logo.png
+  logo: /assets/images/badges/NYU-logo.jpg
   position: >-
     M.S. in Quantitative Economics <br/>
   date: Jun. 2024 - Jun. 2025
@@ -57,7 +57,7 @@ education:
 
 experience:
 - name: NYU Stern
-  logo: /assets/images/badges/NYU-logo.png
+  logo: /assets/images/badges/NYU-logo.jpg
   position: Research Assistant
   date: Sep. 2024 - May 2025
 - name: Northeast Securities
