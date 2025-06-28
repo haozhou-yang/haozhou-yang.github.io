@@ -3,10 +3,10 @@ secondary_name: ""
 navbar_name: "Haozhou Yang"
 
 positions:
-- logo: /assets/images/badges/ucsb-logo.png  # Logo is optional
+# - logo: /assets/images/badges/ucsb-logo.png 
   name: Prospective Economics PhD student, UCSB
-- logo: /assets/images/badges/NYU-logo.jpg  # Logo is optional
-  name: Research Assistant, NYU Stern
+# - logo: /assets/images/badges/NYU-logo.jpg 
+#   name: Research Assistant, NYU Stern
 
 
 email: "haozhouyang@ucsb.edu"
