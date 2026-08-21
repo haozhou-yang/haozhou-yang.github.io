@@ -2,8 +2,15 @@
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <div class="row my-3">
             <div class="col-6">
-                <div class="text-muted">
+                <div class="text-muted footer-meta">
                     <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
+                    <span class="footer-meta-separator" aria-hidden="true">·</span>
+                    <img
+                        class="visitor-counter"
+                        src="https://hits.sh/haozhou-yang.github.io.svg?style=flat-square&amp;label=Visits&amp;color=6c757d&amp;labelColor=343a40"
+                        alt="Total website visits"
+                        title="Total website visits"
+                        referrerpolicy="no-referrer">
                 </div>
             </div>
             <div class="col-6">
