@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 baseurl: "" # the subpath of your site, e.g. /blog
 title: Haozhou Yang
-description: Personal academic website of Haozhou Yang, Economics PhD student at UCSB.
+description: Economics Ph.D. student at UC Santa Barbara. My academic interests lie in labor economics and behavioral economics.
 url: "https://haozhou-yang.github.io"  
 
 # Build settings
