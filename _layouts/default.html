@@ -5,8 +5,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="m6BYogshTimme7tR_XoWT7IMB93ZuyMsB8iqeDos3dg" />
+    {% assign page_description = page.description | default: site.description %}
+    {% assign page_canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+    {% assign page_seo_title = page.seo_title | default: page.title %}
+    <meta name="description" content="{{ page_description | strip_html | strip_newlines | escape }}">
+    <meta name="author" content="{{ site.data.profile.primary_name }}">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="{{ page_canonical_url }}">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }} - {{ site.data.profile.navbar_name }}{% endif %}</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ page_seo_title }}">
+    <meta property="og:description" content="{{ page_description | strip_html | strip_newlines | escape }}">
+    <meta property="og:url" content="{{ page_canonical_url }}">
+    <meta property="og:image" content="{{ site.data.profile.portrait_url | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_seo_title }}">
+    <meta name="twitter:description" content="{{ page_description | strip_html | strip_newlines | escape }}">
+
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "{{ site.url }}/#website",
+          "url": "{{ site.url }}/",
+          "name": {{ site.title | jsonify }},
+          "description": {{ site.description | jsonify }}
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "{{ site.url }}/#webpage",
+          "url": "{{ site.url }}/",
+          "name": {{ page_seo_title | jsonify }},
+          "description": {{ page_description | jsonify }},
+          "isPartOf": { "@id": "{{ site.url }}/#website" },
+          "mainEntity": { "@id": "{{ site.url }}/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "{{ site.url }}/#person",
+          "name": {{ site.data.profile.primary_name | jsonify }},
+          "url": "{{ site.url }}/",
+          "image": "{{ site.data.profile.portrait_url | absolute_url }}",
+          "jobTitle": "Economics Ph.D. student",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California, Santa Barbara",
+            "sameAs": "https://www.ucsb.edu/"
+          },
+          "sameAs": [
+            "https://github.com/{{ site.data.profile.github }}",
+            "https://twitter.com/{{ site.data.profile.twitter }}",
+            "https://www.linkedin.com/in/{{ site.data.profile.linkedin }}"
+          ]
+        }
+      ]
+    }
+    </script>
+    {% endif %}
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
@@ -20,9 +81,9 @@
 </head>
 <body class="bg-light" {{ page.body_attr }}>
     {% include navbar.html %}
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+    <main class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         {{content}}
-    </div>
+    </main>
     {% include footer.html %}
 
     <!-- Scripts -->

@@ -1,14 +1,13 @@
 ---
 layout: default
 title : Homepage
+seo_title: Haozhou Yang | Academic Homepage
+description: Haozhou Yang is an Economics Ph.D. student at UC Santa Barbara whose academic interests include labor economics and behavioral economics.
 navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
-{% include widgets/debug_repo_name.html %}
-
-{% include widgets/debug_url.html %}
-
+<div data-nosnippet>
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
 {% endif %}
@@ -30,3 +29,4 @@ navbar_title: Home
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
+</div>
